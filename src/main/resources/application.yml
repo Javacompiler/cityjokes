@@ -1,0 +1,17 @@
+server:
+  port: 7080
+  servlet:
+    context-path: /cityjokes
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: cityjokes
+      repositories:
+        type: auto
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
